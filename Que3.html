@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Image Zoom and Disable Right-click</title>
+  <style>
+    img.zoom {
+      transition: transform 0.6s ease;
+    }
+    img.zoom:hover {
+      transform: scale(1.2);
+    }
+  </style>
+  <script>
+    document.addEventListener('contextmenu', function(event) {
+      event.preventDefault();
+    });
+  </script>
+</head>
+<body>
+  <img class="zoom" src="images/img12.jpeg" >
+</body>
+</html>
